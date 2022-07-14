@@ -1,0 +1,109 @@
+ext {
+    // Android
+    minSdkVersion = 21
+    targetSdkVersion = 31
+    versionCode = 1
+    versionName = "1.0"
+    compileSdkVersion = 31
+
+    // Libraries
+    swipeRefreshLayoutVersion = '1.1.0'
+    coreKtxVersion = '1.7.0'
+    retrofit2Version = '2.9.0'
+    supportVersion = '1.4.0'
+    supportV4Version = '1.0.0'
+    annotationVersion = '1.3.0'
+    hiltVersion = '2.38.1'
+    hiltFragmentVersion = "1.0.0"
+    espressoVersion = '3.1.0-alpha1'
+    powermockVersion = '1.7.4'
+    lifecycleVersion = '2.4.0'
+    lifecycleExtensionsVersion = '2.1.0'
+    coilVersion = '1.4.0'
+    okhttpLoggingVersion = '4.9.2'
+    gsonVersion = '2.8.9'
+    moshiVersion = '1.12.0'
+    constraintLayoutVersion = '2.1.0'
+    multidexVersion = '2.0.1'
+    navigationVersion = '2.3.5'
+    coroutinesVersion = '1.5.1'
+    coroutinesCoreVersion = '1.3.3'
+
+    // Unit Test
+    androidXJunitVersion = '1.1.4-alpha03'
+    assertjVersion = '3.19.0'
+    junitVersion = '4.12'
+    mockitoVersion = '4.0.0'
+    mockitoAndroidVersion = '4.0.0'
+    supportTest = '1.1.0-alpha1'
+    mockitoKotlinVersion = '2.0.0-RC1'
+    robolectricVersion = '4.7.2'
+    mockitoCoreVersion = '2.21.0'
+    archCoreVersion = '2.1.0'
+    testRuleVersion = '1.4.0'
+
+    // App
+    appDependencies = [
+            coreKtx               : "androidx.core:core-ktx:$coreKtxVersion",
+            kotlin                : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion",
+            appCompat             : "androidx.appcompat:appcompat:$supportVersion",
+            material              : "com.google.android.material:material:$supportVersion",
+            supportv4             : "androidx.legacy:legacy-support-v4:$supportV4Version",
+            annotation            : "androidx.annotation:annotation:$annotationVersion",
+            swipeRefreshLayout    : "androidx.swiperefreshlayout:swiperefreshlayout:$swipeRefreshLayoutVersion",
+            hiltAndroid           : "com.google.dagger:hilt-android:$hiltVersion",
+            hiltAndroidKapt       : "com.google.dagger:hilt-android-compiler:$hiltVersion",
+            hiltNavigationFragment: "androidx.hilt:hilt-navigation-fragment:$hiltFragmentVersion",
+            retrofitMoshi         : "com.squareup.retrofit2:converter-moshi:$retrofit2Version",
+            moshi                 : "com.squareup.moshi:moshi:$moshiVersion",
+            moshiKotlin           : "com.squareup.moshi:moshi-kotlin:$moshiVersion",
+            moshiKapt             : "com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion",
+            okhttpLogging         : "com.squareup.okhttp3:logging-interceptor:$okhttpLoggingVersion",
+            gson                  : "com.google.code.gson:gson:$gsonVersion",
+            constraintLayout      : "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion",
+            multidex              : "androidx.multidex:multidex:$multidexVersion",
+            lifecycleExtensions   : "androidx.lifecycle:lifecycle-extensions:$lifecycleExtensionsVersion",
+            lifecycleCommon       : "androidx.lifecycle:lifecycle-common-java8:$lifecycleVersion",
+            navigationUi          : "androidx.navigation:navigation-fragment-ktx:$navigationVersion",
+            navigationFragment    : "androidx.navigation:navigation-ui-ktx:$navigationVersion",
+            coroutines            : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion",
+            coroutinesAndroid     : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion",
+            coroutinesCore        : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesCoreVersion",
+            coil                  : "io.coil-kt:coil:$coilVersion"
+    ]
+
+    dataDependencies = [
+            moshiConverter        : "com.squareup.retrofit2:converter-moshi:$retrofit2Version",
+            coroutinesCore        : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesCoreVersion"
+    ]
+
+    domainDependencies = [
+            kotlin                : "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion",
+            coroutinesCore        : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesCoreVersion"
+    ]
+
+    appTestDependencies = [
+            junit                 : "junit:junit:$junitVersion",
+            hiltAndroid           : "com.google.dagger:hilt-android-testing:$hiltVersion",
+            hiltAndroidKapt       : "com.google.dagger:hilt-android-compiler:$hiltVersion",
+            androidXJunit         : "androidx.test.ext:junit-ktx:$androidXJunitVersion",
+            assertj               : "org.assertj:assertj-core:$assertjVersion",
+            espressoCore          : "androidx.test.espresso:espresso-core:$espressoVersion",
+            espressoContrib       : "androidx.test.espresso:espresso-contrib:$espressoVersion",
+            espressoIdlingResource: "androidx.test.espresso:espresso-idling-resource:$espressoVersion",
+            espressoIntents       : "androidx.test.espresso:espresso-intents:$espressoVersion",
+            kotlin                : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion",
+            archCore              : "androidx.arch.core:core-testing:$archCoreVersion",
+            mockito               : "org.mockito:mockito-core:$mockitoVersion",
+            mockitoKotlin2        : "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitoKotlinVersion",
+            mockitoKotlin         : "org.mockito.kotlin:mockito-kotlin:$mockitoVersion",
+            mockitoAndroid        : "org.mockito:mockito-android:$mockitoAndroidVersion",
+            supportAnnotations    : "androidx.annotation:annotation:$supportVersion",
+            robolectric           : "org.robolectric:robolectric:$robolectricVersion",
+            powermockModuleJunit4 : "org.powermock:powermock-module-junit4:$powermockVersion",
+            powermockApiMockito   : "org.powermock:powermock-api-mockito:$powermockVersion",
+            coroutines            : "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutinesVersion",
+            navigation            : "androidx.navigation:navigation-testing:$navigationVersion",
+            testRule              : "androidx.test:rules:$testRuleVersion"
+    ]
+}
